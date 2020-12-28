@@ -1,0 +1,16 @@
+<div class="form-group">
+    <label for="title">Title</label>
+    <input class="postlist-header" name="title" id="title" type='text' label="tags" value="<%= post.title %>"  required></input>
+    <label for="title">Tags 📁</label>
+    <input id="tags" name = "tags" type="text" label="tags" required value="<%= post.tags %>">
+
+    <p>
+        <label for="content">Content</label>
+        <textarea id="content" name="content" cols="30" rows="20" required><%= post.content %></textarea>
+    </p>
+
+    <input name="id" id="id" type="hidden" value="<%= post.id %>">
+</div>
+<div class="form-group">
+    <button type="submit">Save</button>
+</div>

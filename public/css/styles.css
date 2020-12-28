@@ -1,0 +1,55 @@
+body {
+  font-family: "Open Sans", serif;
+  color: #020202;
+}
+
+header {
+  text-align: center;
+  background-color: rgb(243, 243, 243);
+  margin-bottom: 10px;
+}
+
+nav {
+  padding-bottom: 10px;
+}
+
+section {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.site-title {
+  padding-top: 1em;
+  font-weight: 800;
+}
+
+.postlist-title {
+  padding-top: 2em;
+  font-weight: 800;
+}
+
+.postlist-nav {
+  text-align: end;
+}
+
+.post-nav {
+  text-align: end;
+  padding-bottom: 1em;
+}
+
+.post-title {
+  font-weight: 800;
+}
+
+.post-meta {
+  font-size: small;
+  color: grey;
+  padding-bottom: 2em;
+}
+
+@media (min-width: 40rem) {
+  .container {
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+}

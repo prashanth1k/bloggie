@@ -1,0 +1,40 @@
+
+<html>
+    <head>
+        <%- include('../partials/head'); %>
+    </head>
+
+
+    <body>
+        <%- include('../partials/nav'); %>
+        <div class="postlist-nav">
+            <div class="container">
+                <a href="/blog/new"><button>New Post</button></a>
+            </div>
+
+        </div>
+        <div class="container">
+            <section>
+                <% posts.forEach(post => { %>
+                <aside>
+                    <h3 class="postlist-title"><%= post.title %></h3>
+                    <div class="post-meta">
+                        📅 <%= post.created_at.toISOString().substring(0,10) %>
+                        |
+                        📁<%= post.tags %>
+                    </div>
+                    <p>
+                        <%= post.content.substring(0,200) + '...' %>
+                    </p>
+                </aside>
+                <a href="/blog/<%= post.slug %>">Read More</a>
+                <% }); %>
+            </section>
+        </div> 
+        <footer>
+            <%- include('../partials/footer'); %>
+        </footer>
+    </body>
+</html>
+
+    
